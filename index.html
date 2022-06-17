@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en" class="global-fonts global-html">
+<head>
+  <!-- META -->
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>| FoodDelivery</title>
+  <!-- ICON -->
+  <link rel="icon" type="image/x-icon" href="img/logo-icon.png">
+  <!-- BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <!-- LINK -->
+  <link rel="stylesheet" href="style/style.css">
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  
+</head>
+<body class="global-body overflow-hidden">
+  <!-- LOADER -->
+  <div class="bg-loader">
+    <div class="block-spin">
+      <div class="lds-heart"><div></div></div>
+    </div>
+  </div>
+  <!-- CURSOR -->
+  <div id="cursor"></div>
+  <div id="aura"></div>
+
+  <!-- HEADER -->
+  <header class="header row w-100" id="header">
+    <div class="wrapper header__media m-auto justify-content-between align-items-center d-flex">
+      <div class="header__block d-flex align-items-center">
+        <a href="#" class="header__logo-link cursor__link">
+          <img src="img/logo.svg" alt="Logo" class="header__logo">
+        </a>
+        <form action="/" class="header__form overflow-hidden cursor__link">
+          <input type="search" name="header__search" id="header__search" class="header__search border-0" placeholder="Search">
+          <button class="header__search-btn border-0" type="submit" form="header__form">
+            <img src="img/search.svg" alt="" class="header__search-img">
+          </button>
+        </form>
+      </div>
+      <div class="header__block d-flex align-items-center">
+
+        <nav class="header__nav">
+          <ul class="header__ul m-0">
+            <li class="nav__item">
+              <a href="#" class="nav__link cursor__link">
+                Restaurants
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link cursor__link">
+                Deals
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link left__line cursor__link">
+                My orders
+              </a>
+            </li>
+          </ul>
+        </nav>
+        
+        <div class="header__block position-relative d-flex align-items-center">
+          
+          <div class="header__block ml-25 cursor__link">
+            <div class="header__shopping br-16">
+              <img src="img/shopping-icon.svg" alt="" class="header__shopping-img">
+            </div>
+            <span class="shopping__num position-absolute">4</span>
+          </div>
+          <div class="header__avatar-bg ml-15 br-16 cursor__link">
+            <img src="img/avatar.jpg" alt="" class="header__avatar br-16">
+          </div>
+          <div class="left__line header__burger-main cursor__link d-flex align-items-center">
+            <div class="header__burger br-16">
+              <img src="img/menu.svg" alt="" class="header__burger-icon">
+            </div>            
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- SECTION -->
+  <div class="wrapper m-auto">
+
+    <section class="section card__section d-flex align-items-center mt-24">
+      
+      <a href="#" class="w-100 cards__link d-flex cards align-items-center cursor__link br-16 overflow-hidden bg-lite-blue hover-bg-blue">
+        <img src="img/keks.png" alt="" class="card__img">
+        <div class="cards__text col">
+          <h3 class="cards__title-sup">
+            All deserts
+          </h3>
+          <h3 class="cards__title mt-8 blue-text">
+            20% OFF
+          </h3>
+          <h3 class="cards__title-sub">
+            Deserty
+          </h3>
+        </div>
+      </a>
+      <a href="#" class="w-100 cards__link d-flex cards align-items-center cursor__link br-16 overflow-hidden bg-lite-orange hover-bg-orange">
+        <img src="img/burger.png" alt="" class="card__img">
+        <div class="cards__text col">
+          <h3 class="cards__title-sup">
+            Big Burgers
+          </h3>
+          <h3 class="cards__title mt-8 orange-text">
+            50% OFF
+          </h3>
+          <h3 class="cards__title-sub">
+            Fooddies
+          </h3>
+        </div>
+      </a>
+
+    </section>
+
+    <!--  -->
+
+    <section class="section m-auto">
+      <div class="filter__overflow mt-32 d-flex justify-content-between">
+        <input class="filter__checked w-0 overflow-hidden" type="checkbox" name="filter__1" id="filter__1">
+        <input class="filter__checked w-0 overflow-hidden" type="checkbox" checked name="filter__2" id="filter__2">
+        <input class="filter__checked w-0 overflow-hidden" type="checkbox" name="filter__3" id="filter__3">
+        <input class="filter__checked w-0 overflow-hidden" type="checkbox" checked name="filter__4" id="filter__4">
+        <input class="filter__checked w-0 overflow-hidden" type="checkbox" name="filter__5" id="filter__5">
+        <input class="filter__checked w-0 overflow-hidden" type="checkbox" name="filter__6" id="filter__6">
+
+        <label class="filter col overflow-hidden br-16 flex-column d-flex cursor__link" for="filter__1">
+          <img src="img/pizza-icon.png" alt="" class="filter__img m-auto">
+          <span class="filter__name">Pizza</span>
+        </label>
+        <label class="filter col overflow-hidden br-16 flex-column d-flex cursor__link" for="filter__2">
+          <img src="img/burger-icon.png" alt="" class="filter__img m-auto">
+          <span class="filter__name">Burger</span>
+        </label>
+        <label class="filter col overflow-hidden br-16 flex-column d-flex cursor__link" for="filter__3">
+          <img src="img/meat-icon.png" alt="" class="filter__img m-auto">
+          <span class="filter__name">BBQ</span>
+        </label>
+        <label class="filter col overflow-hidden br-16 flex-column d-flex cursor__link" for="filter__4">
+          <img src="img/sushi-icon.png" alt="" class="filter__img m-auto">
+          <span class="filter__name">Sushi</span>
+        </label>
+        <label class="filter col overflow-hidden br-16 flex-column d-flex cursor__link" for="filter__5">
+          <img src="img/broccoli-icon.png" alt="" class="filter__img m-auto">
+          <span class="filter__name">Vegan</span>
+        </label>
+        <label class="filter col overflow-hidden br-16 flex-column d-flex cursor__link" for="filter__6">
+          <img src="img/cake-icon.png" alt="" class="filter__img m-auto">
+          <span class="filter__name">Desserts</span>
+        </label>        
+      </div>
+    </section>
+
+    <!--  -->
+
+    <section class="m-auto section pt-40 pb-100">
+      <h2 class="block__title mb-16">
+        Nearby restaurants
+      </h2>
+      <div class="blocks d-flex flex-wrap justify-content-between">
+
+        <a href="#" class="block w-100 featured br-16 overflow-hidden cursor__link">
+          <img src="img/block__img-1.jpg" alt="" class="block__img overflow-hidden">
+          <div class="block__text-content">
+            <div class="d-flex justify-content-between pb-6">
+              <h4 class="block__name">
+                Royal Sushi House
+              </h4>
+              <div class="block__basket-block">
+                <img src="img/shopping-icon-gray.svg" alt="" class="block__basket">
+              </div>
+            </div>
+            <div class="d-flex pb-14">
+              <div class="block__clock d-flex align-items-center">
+                <span class="block__info">30-40 min</span>
+              </div>
+              <div class="block__sum d-flex align-items-center">
+                <span class="block__info">$32 min sum</span>
+              </div>
+            </div>
+            <div class="d-flex">
+              <div class="d-flex block__category block__info align-items-center">
+                <img src="img/sushi-icon.png" class="block__category-img block__info">
+                <span class="block__category-text block__info">Sushi</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="block w-100 featured br-16 overflow-hidden cursor__link">
+          <img src="img/block__img-2.jpg" alt="" class="block__img overflow-hidden">
+          <div class="block__text-content">
+            <div class="d-flex justify-content-between pb-6">
+              <h4 class="block__name">
+                Burgers & Pizza
+              </h4>
+              <div class="block__basket-block">
+                <img src="img/shopping-icon-gray.svg" alt="" class="block__basket">
+              </div>
+            </div>
+            <div class="d-flex pb-14">
+              <div class="block__clock d-flex align-items-center">
+                <span class="block__info">40-60 min</span>
+              </div>
+              <div class="block__sum d-flex align-items-center">
+                <span class="block__info">$24 min sum</span>
+              </div>
+            </div>
+            <div class="d-flex">
+              <div class="d-flex block__category block__info align-items-center">
+                <img src="img/burger-icon.png" class="block__category-img block__info">
+                <span class="block__category-text block__info">Burger</span>
+              </div>
+              <div class="d-flex block__category block__info align-items-center">
+                <img src="img/pizza-icon.png" class="block__category-img block__info">
+                <span class="block__category-text block__info">Pizza</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="block w-100 br-16 overflow-hidden cursor__link">
+          <img src="img/block__img-3.jpg" alt="" class="block__img overflow-hidden">
+          <div class="block__text-content">
+            <div class="d-flex justify-content-between pb-6">
+              <h4 class="block__name">
+                Ninja sushi
+              </h4>
+              <div class="block__basket-block">
+                <img src="img/shopping-icon-gray.svg" alt="" class="block__basket">
+              </div>
+            </div>
+            <div class="d-flex pb-14">
+              <div class="block__clock d-flex align-items-center">
+                <span class="block__info">20-40 min</span>
+              </div>
+              <div class="block__sum d-flex align-items-center">
+                <span class="block__info">$40 min sum</span>
+              </div>
+            </div>
+            <div class="d-flex">
+              <div class="d-flex block__category block__info align-items-center">
+                <img src="img/sushi-icon.png" class="block__category-img block__info">
+                <span class="block__category-text block__info">Sushi</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="block w-100 br-16 overflow-hidden cursor__link">
+          <img src="img/block__img-4.jpg" alt="" class="block__img overflow-hidden">
+          <div class="block__text-content">
+            <div class="d-flex justify-content-between pb-6">
+              <h4 class="block__name">
+                Sushi master
+              </h4>
+              <div class="block__basket-block">
+                <img src="img/shopping-icon-gray.svg" alt="" class="block__basket">
+              </div>
+            </div>
+            <div class="d-flex pb-14">
+              <div class="block__clock d-flex align-items-center">
+                <span class="block__info">60-70 min</span>
+              </div>
+              <div class="block__sum d-flex align-items-center">
+                <span class="block__info">$49 min sum</span>
+              </div>
+            </div>
+            <div class="d-flex">
+              <div class="d-flex block__category block__info align-items-center">
+                <img src="img/sushi-icon.png" class="block__category-img block__info">
+                <span class="block__category-text block__info">Sushi</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="block w-100 br-16 overflow-hidden cursor__link">
+          <img src="img/block__img-5.jpg" alt="" class="block__img overflow-hidden">
+          <div class="block__text-content">
+            <div class="d-flex justify-content-between pb-6">
+              <h4 class="block__name">
+                Japanese sushi
+              </h4>
+              <div class="block__basket-block">
+                <img src="img/shopping-icon-gray.svg" alt="" class="block__basket">
+              </div>
+            </div>
+            <div class="d-flex pb-14">
+              <div class="block__clock d-flex align-items-center">
+                <span class="block__info">30-50 min</span>
+              </div>
+              <div class="block__sum d-flex align-items-center">
+                <span class="block__info">$104 min sum</span>
+              </div>
+            </div>
+            <div class="d-flex">
+              <div class="d-flex block__category block__info align-items-center">
+                <img src="img/sushi-icon.png" class="block__category-img block__info">
+                <span class="block__category-text block__info">Sushi</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="block w-100 br-16 overflow-hidden cursor__link">
+          <img src="img/block__img-6.jpg" alt="" class="block__img overflow-hidden">
+          <div class="block__text-content">
+            <div class="d-flex justify-content-between pb-6">
+              <h4 class="block__name">
+                Kobe
+              </h4>
+              <div class="block__basket-block">
+                <img src="img/shopping-icon-gray.svg" alt="" class="block__basket">
+              </div>
+            </div>
+            <div class="d-flex pb-14">
+              <div class="block__clock d-flex align-items-center">
+                <span class="block__info">20-30 min</span>
+              </div>
+              <div class="block__sum d-flex align-items-center">
+                <span class="block__info">$57 min sum</span>
+              </div>
+            </div>
+            <div class="d-flex">
+              <div class="d-flex block__category block__info align-items-center">
+                <img src="img/sushi-icon.png" class="block__category-img block__info">
+                <span class="block__category-text block__info">Sushi</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </section>
+  </div>
+
+  <!-- BOOTSTRAP -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+
+  <!-- SCRIPT -->
+  <script src="scripts/script.js"></script>
+  <script src="scripts/cursor.js"></script>
+</body>
+</html>
